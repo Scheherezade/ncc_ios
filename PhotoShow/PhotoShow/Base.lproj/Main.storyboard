@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fpM-s9-2pl">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Show View Controller-->
+        <scene sceneID="THH-k8-z89">
+            <objects>
+                <viewController id="fpM-s9-2pl" customClass="PhotoShowViewController" customModule="PhotoShow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GLn-ch-opL"/>
+                        <viewControllerLayoutGuide type="bottom" id="xZt-gp-ahS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A2m-L3-NOx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNh-nY-dpq">
+                                <rect key="frame" x="20" y="28" width="47" height="30"/>
+                                <animations/>
+                                <state key="normal" title="photo1"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="fpM-s9-2pl" eventType="touchUpInside" id="Lgd-0T-F8z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHB-RO-ok4">
+                                <rect key="frame" x="276" y="28" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="photo2"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="fpM-s9-2pl" eventType="touchUpInside" id="JF4-TT-ngT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5G-tL-f0O">
+                                <rect key="frame" x="531" y="28" width="50" height="30"/>
+                                <animations/>
+                                <state key="normal" title="photo3"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="fpM-s9-2pl" eventType="touchUpInside" id="yGR-qv-Jqh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTG-JC-wHg">
+                                <rect key="frame" x="19" y="550" width="50" height="30"/>
+                                <animations/>
+                                <state key="normal" title="photo4"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="fpM-s9-2pl" eventType="touchUpInside" id="tZd-W7-XoL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T31-Bm-qZh">
+                                <rect key="frame" x="276" y="550" width="49" height="30"/>
+                                <animations/>
+                                <state key="normal" title="photo5"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="fpM-s9-2pl" eventType="touchUpInside" id="Ci5-iy-hU7"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MkT-th-muh">
+                                <rect key="frame" x="20" y="66" width="560" height="476"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kiW-Gf-4XL">
+                                <rect key="frame" x="532" y="550" width="50" height="30"/>
+                                <animations/>
+                                <state key="normal" title="photo6"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="fpM-s9-2pl" eventType="touchUpInside" id="8x9-lk-6CC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HNh-nY-dpq" firstAttribute="leading" secondItem="MkT-th-muh" secondAttribute="leading" id="83r-dY-9Wr"/>
+                            <constraint firstItem="MkT-th-muh" firstAttribute="leading" secondItem="A2m-L3-NOx" secondAttribute="leadingMargin" id="BTo-tH-epv"/>
+                            <constraint firstItem="T31-Bm-qZh" firstAttribute="baseline" secondItem="cTG-JC-wHg" secondAttribute="baseline" id="LyW-JC-Sz8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kiW-Gf-4XL" secondAttribute="trailing" constant="-2" id="Lzm-Jp-BPY"/>
+                            <constraint firstItem="T31-Bm-qZh" firstAttribute="leading" secondItem="jHB-RO-ok4" secondAttribute="leading" id="PyW-DE-FAl"/>
+                            <constraint firstItem="MkT-th-muh" firstAttribute="trailing" secondItem="A2m-L3-NOx" secondAttribute="trailingMargin" id="TEA-g6-vFz"/>
+                            <constraint firstItem="HNh-nY-dpq" firstAttribute="top" secondItem="GLn-ch-opL" secondAttribute="bottom" constant="8" symbolic="YES" id="dE5-MX-EiV"/>
+                            <constraint firstItem="cTG-JC-wHg" firstAttribute="top" secondItem="MkT-th-muh" secondAttribute="bottom" constant="8" symbolic="YES" id="dZ6-9D-6sN"/>
+                            <constraint firstItem="HNh-nY-dpq" firstAttribute="centerX" secondItem="cTG-JC-wHg" secondAttribute="centerX" id="go2-PD-ezT"/>
+                            <constraint firstItem="MkT-th-muh" firstAttribute="centerX" secondItem="jHB-RO-ok4" secondAttribute="centerX" id="hQq-wD-hSQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="M5G-tL-f0O" secondAttribute="trailing" constant="-1" id="jkB-Tl-bcw"/>
+                            <constraint firstItem="T31-Bm-qZh" firstAttribute="baseline" secondItem="kiW-Gf-4XL" secondAttribute="baseline" id="kQs-to-0zI"/>
+                            <constraint firstItem="HNh-nY-dpq" firstAttribute="baseline" secondItem="jHB-RO-ok4" secondAttribute="baseline" id="nLd-kS-uT3"/>
+                            <constraint firstAttribute="bottom" secondItem="cTG-JC-wHg" secondAttribute="bottom" constant="20" symbolic="YES" id="pSm-SR-K8J"/>
+                            <constraint firstItem="MkT-th-muh" firstAttribute="top" secondItem="HNh-nY-dpq" secondAttribute="bottom" constant="8" symbolic="YES" id="rOh-KI-adZ"/>
+                            <constraint firstItem="M5G-tL-f0O" firstAttribute="baseline" secondItem="jHB-RO-ok4" secondAttribute="baseline" id="rRi-N8-TXa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="MkT-th-muh" id="bdo-SP-lr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qjr-Zx-JrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="1"/>
+        </scene>
+    </scenes>
+</document>
