@@ -51,7 +51,12 @@ class PlaceListTableViewController: UITableViewController {
 
         return cell
     }
-
+        
+    override func prepareForSegue(segue: UIStoryboardSegue,
+        sender: AnyObject?) {
+            let destVC = segue.destinationViewController as! MapDisplayViewController
+            destVC.selectedIndex = tableView.indexPathForSelectedRow!.row
+    }
 
     /*
     // Override to support conditional editing of the table view.
