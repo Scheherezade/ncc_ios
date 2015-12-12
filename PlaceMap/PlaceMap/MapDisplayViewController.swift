@@ -7,14 +7,9 @@
 //
 
 import UIKit
-import MapKit
 
-class MapDisplayViewController: UIViewController {
+class MapDisplayViewController: UITableViewController {
 
-    var selectedIndex : Int = 0
-    
-    @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var placeName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,30 +19,6 @@ class MapDisplayViewController: UIViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        print("Selected = \(selectedIndex)")
-        // \は、円記号ではなく、バックスラッシュです。option+¥ で入力できます。
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let places = appDelegate.placeDB.places
-        let prefName = places[selectedIndex]["pref"] as! String
-        let capName = places[selectedIndex]["name"] as! String
-        
-        print("info = \(prefName)\(capName)")
-        
-        self.placeName.text = "\(prefName)[\(capName)]"
-        
-        let coordinate = CLLocationCoordinate2D(
-            latitude: places[selectedIndex]["latitude"] as! CLLocationDegrees,
-            longitude: places[selectedIndex]["longitude"] as! CLLocationDegrees
-        )
-//        self.mapView.centerCoordinate = coordinate
-        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
-        let region = MKCoordinateRegion(center: coordinate, span: span)
-        self.mapView.region = region
-        
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -56,6 +27,15 @@ class MapDisplayViewController: UIViewController {
 
     // MARK: - Table view data source
 
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
 
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
