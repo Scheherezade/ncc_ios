@@ -1,14 +1,14 @@
 //
-//  MapDisplayViewController.swift
-//  PlaceMap
+//  CustomCellTableViewController.swift
+//  customCellTest
 //
-//  Created by shunsukeshimada on 2015/11/14.
+//  Created by shunsukeshimada on 2015/12/05.
 //  Copyright © 2015年 shunsukeshimada. All rights reserved.
 //
 
 import UIKit
 
-class MapDisplayViewController: UITableViewController {
+class CustomCellTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,23 +29,31 @@ class MapDisplayViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 6
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 4
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("MYCUSTOMCELL", forIndexPath: indexPath) as! MyCustomCell
 
-        // Configure the cell...
+        cell.column1?.text = "Section¥(indexPath.section)"
+        cell.column2?.text = "line¥(indexPath.row)"
+        cell.column3?.text = "Info¥(indexPath.row)"
 
         return cell
     }
-    */
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Title of Section ¥(section)"
+    }
+    
+    override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        return "Footer of Section ¥(section)"
+    }
 
     /*
     // Override to support conditional editing of the table view.

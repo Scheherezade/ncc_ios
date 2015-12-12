@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AE35F0D61BF6CDD70018E8D7"
-               BuildableName = "PlaceMap.app"
-               BlueprintName = "PlaceMap"
-               ReferencedContainer = "container:PlaceMap.xcodeproj">
+               BlueprintIdentifier = "AE4A4A9D1C128CA100E8049D"
+               BuildableName = "customCellTest.app"
+               BlueprintName = "customCellTest"
+               ReferencedContainer = "container:customCellTest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,24 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEF817BC1C1BDA9400864D93"
-               BuildableName = "PlaceMapTests.xctest"
-               BlueprintName = "PlaceMapTests"
-               ReferencedContainer = "container:PlaceMap.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AE35F0D61BF6CDD70018E8D7"
-            BuildableName = "PlaceMap.app"
-            BlueprintName = "PlaceMap"
-            ReferencedContainer = "container:PlaceMap.xcodeproj">
+            BlueprintIdentifier = "AE4A4A9D1C128CA100E8049D"
+            BuildableName = "customCellTest.app"
+            BlueprintName = "customCellTest"
+            ReferencedContainer = "container:customCellTest.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AE35F0D61BF6CDD70018E8D7"
-            BuildableName = "PlaceMap.app"
-            BlueprintName = "PlaceMap"
-            ReferencedContainer = "container:PlaceMap.xcodeproj">
+            BlueprintIdentifier = "AE4A4A9D1C128CA100E8049D"
+            BuildableName = "customCellTest.app"
+            BlueprintName = "customCellTest"
+            ReferencedContainer = "container:customCellTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AE35F0D61BF6CDD70018E8D7"
-            BuildableName = "PlaceMap.app"
-            BlueprintName = "PlaceMap"
-            ReferencedContainer = "container:PlaceMap.xcodeproj">
+            BlueprintIdentifier = "AE4A4A9D1C128CA100E8049D"
+            BuildableName = "customCellTest.app"
+            BlueprintName = "customCellTest"
+            ReferencedContainer = "container:customCellTest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

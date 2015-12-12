@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PlaceMap.xcscheme</key>
+		<key>customCellTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>AE35F0D61BF6CDD70018E8D7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AEF817BC1C1BDA9400864D93</key>
+		<key>AE4A4A9D1C128CA100E8049D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

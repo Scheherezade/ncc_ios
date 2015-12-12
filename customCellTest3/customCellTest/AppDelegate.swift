@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  PlaceMap
+//  customCellTest
 //
-//  Created by shunsukeshimada on 2015/11/14.
+//  Created by shunsukeshimada on 2015/12/05.
 //  Copyright © 2015年 shunsukeshimada. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var placeDB: PlaceDatabase = PlaceDatabase()
+
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
